@@ -1,1 +1,1 @@
-# JenkinsCI-admin-scripts
+# jenkinsci-admin-scripts
