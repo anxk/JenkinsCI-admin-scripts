@@ -4,4 +4,4 @@ def jobName = 'test'
 def nextBuildNum = 11
 def job = Jenkins.get().getItemByFullName(jobName)
 job.updateNextBuildNumber(nextBuildNum)
-job.scheduleBuild2()
+job.scheduleBuild2(1)
