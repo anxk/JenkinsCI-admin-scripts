@@ -1,1 +1,5 @@
-Jenkins.instance.getNode('spaDev_qcellsmoke').toComputer().workspaceList.inUse.clear()
+// Release node's workspace.
+
+def jenkins = Jenkins.get()
+def nodeName = 'test'
+jenkins.getNode(nodeName).toComputer().workspaceList.inUse.clear()

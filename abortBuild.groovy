@@ -1,4 +1,4 @@
-// force abort a build
+// Force abort a build.
 
 def jobName = "test"
 def buildNum = 1

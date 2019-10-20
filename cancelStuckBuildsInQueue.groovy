@@ -1,4 +1,4 @@
-// cancel builds in the queue if it is stuck
+// Cancel builds in the queue if it is stuck.
 
 def jenkins = Jenkins.get()
 def items = jenkins.queue.getItems()

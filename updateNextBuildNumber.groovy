@@ -2,6 +2,9 @@
 
 def jobName = 'test'
 def nextBuildNum = 11
-def job = Jenkins.get().getItemByFullName(jobName)
+def jenkins = Jenkins.get()
+def job = jenkins.getItemByFullName(jobName)
 job.updateNextBuildNumber(nextBuildNum)
+
+// schedule a new build with build number 11
 job.scheduleBuild2(1)

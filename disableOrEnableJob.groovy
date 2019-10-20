@@ -1,4 +1,4 @@
-// Disable any type of projects.
+// Disable or enable any type of projects.
 
 def target = 'test'
 def jenkins = Jenkins.get()
