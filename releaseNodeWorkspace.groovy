@@ -1,0 +1,1 @@
+Jenkins.instance.getNode('spaDev_qcellsmoke').toComputer().workspaceList.inUse.clear()
