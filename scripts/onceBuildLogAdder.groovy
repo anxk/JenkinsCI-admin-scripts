@@ -7,16 +7,22 @@ import javax.annotation.Nonnull;
 public class myListener extends RunListener<Run> {
   
   public myListener() {
-    ExtensionList.lookup(RunListener.class).add(this)
+    ExtensionList.lookup(RunListener.class).add(this);
   }
   
   public void onCompleted(Run<?, ?> r, @Nonnull TaskListener listener) {
-    PrintStream logger = listener.getLogger()
-    logger.println("Something")
+    PrintStream logger = listener.getLogger();
+    logger.println("Something");
   }
   
 }
 
 new myListener()
+
+// for (RunListener l: RunListener.all()) {
+//   if (l.getClass().getName() == "myListener") {
+//     RunListener.all().remove(l);
+//   }
+// }
 
 // RunListener.all()
