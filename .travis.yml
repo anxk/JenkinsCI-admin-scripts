@@ -1,0 +1,12 @@
+jobs:
+  include:
+    - stage: get-jenkins-update-center-json
+      script: bash -x ./tools/get-jenkins-update-center-json.sh
+
+deploy:
+  provider: releases
+  api_key: "${GITHUB_OAUTH_TOKEN}"
+  file_glob: true
+  file: ./*.json
+  skip_cleanup: true
+  draft: true
