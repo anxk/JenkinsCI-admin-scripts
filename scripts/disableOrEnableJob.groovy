@@ -7,4 +7,4 @@ def jenkins = Jenkins.get()
 jenkins.getItemByFullName(target).setDisabled(true)
 
 // enable it
-//jenkins.getItemByFullName(target).setDisabled(false)
+// jenkins.getItemByFullName(target).setDisabled(false)

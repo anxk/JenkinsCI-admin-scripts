@@ -1,4 +1,5 @@
 // Statics of jobs.
+
 import org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
 

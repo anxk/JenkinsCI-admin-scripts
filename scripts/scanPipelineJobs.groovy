@@ -1,4 +1,5 @@
 // Inspect pipeline jobs whose script contains some text.
+
 import org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
 

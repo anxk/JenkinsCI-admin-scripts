@@ -11,4 +11,5 @@ public class myListener extends listeners.ItemListener {
         item.scheduleBuild2(20)
     }
 }
+
 new myListener().onStart(item)

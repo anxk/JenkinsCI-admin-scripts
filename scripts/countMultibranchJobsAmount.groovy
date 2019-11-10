@@ -1,4 +1,5 @@
 // Get multibranch jobs' amount.
+
 import org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject
 
 def jenkins = Jenkins.get()

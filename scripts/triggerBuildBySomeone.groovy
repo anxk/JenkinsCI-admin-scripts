@@ -1,4 +1,5 @@
 // Trigger a build in a user in jenkins's user database.
+
 import hudson.model.Cause.UserIdCause
 import hudson.model.Cause
 import jenkins.model.Jenkins
