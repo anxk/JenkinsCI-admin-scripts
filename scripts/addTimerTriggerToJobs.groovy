@@ -1,4 +1,5 @@
 // Add TimerTrigger to jobs
+import hudson.triggers.TimerTrigger;
 
 j = Jenkins.get()
 j.getJobNames().each {
