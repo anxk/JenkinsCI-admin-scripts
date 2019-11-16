@@ -8,7 +8,7 @@ import javax.mail.Transport;
 
 String subject = "test";
 String body = "test";
-String[] recipientsList = ["2641797438@qq.com", "xiaokang112358@gmail.com"];
+String[] recipientsList = ["xxx@qq.com", "yyy@gmail.com"];
 
 JenkinsLocationConfiguration jlc = JenkinsLocationConfiguration.get();
 InternetAddress from = new InternetAddress();
