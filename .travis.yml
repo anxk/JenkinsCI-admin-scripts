@@ -2,6 +2,8 @@ jobs:
   include:
     - stage: get-jenkins-update-center-json
       script: bash -x ./tools/get-jenkins-update-center-json.sh
+      if: |
+        commit_message =~ /archive/
       deploy:
         provider: releases
         api_key: "${GITHUB_OAUTH_TOKEN}"
