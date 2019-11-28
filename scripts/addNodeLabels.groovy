@@ -8,5 +8,6 @@ def h = Jenkins.get()
 h.nodes.each {
 	if (it.name in targetNodeNames) {
 		it.setLabelString(it.getLabelString() + ' ' + additionalLabels)
+                it.save()
 	}
 }
