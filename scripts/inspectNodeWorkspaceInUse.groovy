@@ -1,7 +1,7 @@
 // Inspect nodes's workspaces in use.
 
 def nodePattern = '.*mesos.*'
-def jenkins.get()
+def jenkins = Jenkins.get()
 def nodes = jenkins.getNodes()
 nodes.each {
     if(it.name ==~ nodePattern) {
